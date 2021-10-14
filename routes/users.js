@@ -5,7 +5,7 @@ import {
   getAllUsers,
   getUserById,
   updateUser,
-} from "../controllers/PostController.js";
+} from "../controllers/UserController.js";
 
 const userRouter = express.Router();
 

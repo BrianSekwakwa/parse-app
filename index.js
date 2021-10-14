@@ -3,6 +3,7 @@ import cors from "cors";
 import Parse from "parse/node.js";
 import dotenv from "dotenv";
 import userRouter from "./routes/users.js";
+import postRouter from "./routes/posts.js";
 
 // Start the server
 const app = express();
@@ -14,6 +15,7 @@ app.use(cors());
 
 // API Endpoints
 app.use("/users", userRouter);
+app.use("/posts", postRouter);
 app.get("/", (req, res) => {
   res.send("<h1>Parse Server App</h1>");
 });
